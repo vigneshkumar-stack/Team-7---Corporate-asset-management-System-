@@ -1,0 +1,33 @@
+{
+  "name": "corporate-asset-management-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Corporate Asset Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/initDb.js",
+    "test": "node scripts/testRoleSecurity.js && node scripts/testEndpoints.js",
+    "test:security": "node scripts/testRoleSecurity.js",
+    "test:endpoints": "node scripts/testEndpoints.js"
+  },
+  "keywords": [
+    "asset-management",
+    "express",
+    "mysql",
+    "jwt",
+    "api"
+  ],
+  "author": "Corporate Dev Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.12.0"
+  }
+}
